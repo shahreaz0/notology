@@ -1,0 +1,27 @@
+<% include partials/top %>
+
+  <div class="ui text container huge header">All Notes</div>
+  <div class="ui text container raised segment">
+    <div class="ui divided items">
+      <% notes.forEach(function(note){%>
+        <div class="item">
+          <div class="content">
+            <a class="header" href="/notes/<%=note._id%>">
+              <%= note.title%>
+            </a>
+            <div class="meta">
+              <span><%= note.created.toDateString()%></span>
+            </div>
+            <div class="description">
+              <p><%= note.content.substring(0, 50) %>...</p>
+            </div>
+            <div class="extra">
+              <a class="ui button olive" href="/notes/<%= note._id%>">More</a>
+            </div>
+          </div>
+        </div>
+        <% });%>
+    </div>
+  </div>
+
+  <% include partials/bottom %>

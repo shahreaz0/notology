@@ -1,0 +1,19 @@
+<% include partials/top %>
+
+    <div class="ui text container huge header">Create Note</div>
+
+    <div class="ui text container">
+        <form class="ui form" action="/notes" method="POST">
+            <div class="field">
+                <label>Title</label>
+                <input type="text" name="note[title]" placeholder="">
+            </div>
+            <div class="field">
+                <label>Content</label>
+                <textarea name="note[content]"></textarea>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+        </form>
+    </div>
+
+<% include partials/bottom %>

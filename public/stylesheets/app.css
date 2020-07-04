@@ -1,0 +1,58 @@
+body {
+    background-color: #0F102E;
+    color: #6BC757;
+}
+
+
+
+div.ui.secondary.menu {
+    background-color: #6BC757;
+}
+
+i.icon {
+    font-size: 2em;
+}
+
+
+
+.ui.items>.item>.content>a.header {
+    color: #0F102E;
+}
+
+.ui.items>.item .meta :last-child {
+    color: #6BC757;
+}
+
+.ui.items>.item .extra {
+    color: #BB85D6;
+}
+
+a {
+    color:black;
+}
+
+.description > p {
+    color: #0F102E;
+}
+
+.container.huge.header {
+    color: #BB85D6;
+}
+
+a:hover {
+    color: black;
+}
+
+
+.ui.form .field > label {
+    color: #6BC757;
+}
+
+.ui.text.container.body {
+    border: 1px solid #BB85D6;
+    padding: 10px;
+}
+
+.ui.buttons.couple {
+    margin: 10px 5px 5px 5px;
+}

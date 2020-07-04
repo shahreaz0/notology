@@ -1,0 +1,33 @@
+<% include partials/top %>
+
+  <div class="ui text container huge header">
+    Details
+  </div>
+  <div class="ui text container segment items">
+    <div class="item">
+      <div class="content">
+        <a class="header">
+          <%= note.title%>
+        </a>
+        <div class="meta">
+          <span><%=note.created.toDateString()%></span>
+        </div>
+        <div class="description">
+          <p>
+            <%=note.content%>
+          </p>
+        </div>
+        <div class="extra">
+          <div class="ui buttons couple">
+            <a class="ui button orange" href="/notes/<%=note._id%>/edit">Edit</a>
+            <div class="or"></div>
+            <form action="/notes/<%=note._id%>?_method=DELETE" method="POST">
+              <button class="ui button red" type="submit">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<% include partials/bottom %>
